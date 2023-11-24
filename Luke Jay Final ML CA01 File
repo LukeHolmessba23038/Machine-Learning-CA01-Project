@@ -1,0 +1,11 @@
+import pandas as pd
+
+from google.colab import drive
+drive.mount('/content/drive')
+
+file_path = '/content/drive/My Drive/Conditions_Contributing_to_COVID-19_Deaths__by_State_and_Age__Provisional_2020-2023.csv'
+
+import pandas as pd
+data_1 = pd.read_csv(file_path)
+
+print(data_1.head())
